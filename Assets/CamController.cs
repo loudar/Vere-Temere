@@ -24,7 +24,7 @@ public class CamController : MonoBehaviour
         scrollData = Input.GetAxis("Mouse ScrollWheel");
 
         targetZoom -= scrollData * zoomFactor;
-        targetZoom = Mathf.Min(Mathf.Max(targetZoom, 1), 10);
+        targetZoom = Mathf.Min(Mathf.Max(targetZoom, 1f), 10f);
         
         cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, targetZoom, ref yVelocity, Time.deltaTime * zoomLerpSpeed);
     }
