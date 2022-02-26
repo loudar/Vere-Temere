@@ -4114,6 +4114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RuleTile
       objectReference: {fileID: 0}
+    - target: {fileID: 3584984771903200663, guid: 7ea5954d6a77f7240bf14bbbb7042257, type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 2048218666}
     - target: {fileID: 8118461898777530989, guid: 7ea5954d6a77f7240bf14bbbb7042257, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13444,8 +13448,8 @@ GameObject:
   - component: {fileID: 2048218666}
   - component: {fileID: 2048218665}
   - component: {fileID: 2048218664}
-  - component: {fileID: 2048218667}
   - component: {fileID: 2048218669}
+  - component: {fileID: 2048218667}
   m_Layer: 0
   m_Name: Obstacles
   m_TagString: Occludable
@@ -13523,7 +13527,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 6
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.469697, z: 0}
   m_MaxChunkCount: 16
@@ -13718,7 +13722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d318ce3fb86be4a8cc65ff04f39c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tm: {fileID: 2048218666}
   rb: {fileID: 1860043229}
 --- !u!331 &2048218669
 SpriteMask:
