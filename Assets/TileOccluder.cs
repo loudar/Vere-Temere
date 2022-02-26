@@ -24,9 +24,14 @@ public class TileOccluder : MonoBehaviour
 
         TileBase tile = tm.GetTile(new Vector3Int(x, y, 0));
 
+        Vector3 newPosition = transform.position;
+        newPosition.z = player.transform.z;
+        transform.position = newPosition;
+
         /*
         if ()
         {
+            
             Debug.Log(tm.GetTile(new Vector3Int(x, y, 0)));
             tm.SetTileFlags(new Vector3Int(x, y, 0), TileFlags.None);
             tm.SetColor(new Vector3Int(x, y, 0), Color.Lerp(tm.GetColor(new Vector3Int(x, y, 0)), Color.clear, 0.1f));

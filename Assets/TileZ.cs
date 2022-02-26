@@ -4,14 +4,15 @@ using UnityEngine.Tilemaps;
 public class TileZ : MonoBehaviour
 {
 
-	Tilemap tilemap;
+	public Tilemap tilemap;
 	SpriteMask mask;
 	Vector3Int tilePos;
 	GameObject player;
 
 	void Start()
 	{
-		tilemap = GameObject.Find("Walls").GetComponent<Tilemap>();
+		tilemap = GetComponent<Tilemap>();
+		//tilemap = GameObject.Find("Walls").GetComponent<Tilemap>();
 		mask = GetComponent<SpriteMask>();
 		player = GameObject.Find("Player");
 
@@ -30,6 +31,10 @@ public class TileZ : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+
+
+		Debug.Log($"player: {player.transform.position.y}");
+		Debug.Log($"tile: {mask.transform.position.y}");
 		if (player.transform.position.y < mask.transform.position.y)
 			mask.enabled = false;
 		else
