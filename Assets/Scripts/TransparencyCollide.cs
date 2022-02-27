@@ -6,6 +6,9 @@ public class TransparencyCollide : MonoBehaviour
 {
     public SpriteRenderer sprite;
     [SerializeField] Color color;
+    bool fadingOut = false;
+    float t;
+    float fadeTime = .5f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,14 +19,33 @@ public class TransparencyCollide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // time
+        if (t > 0)
+        {
+            t -= Time.deltaTime;
+        }
+        else
+        {
+            t = 0;
+        }
+
+        // color
+        if (fadingOut)
+        {
+            GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, color, 1 - (t * fadeTime));
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = Color.Lerp(color, Color.white, 1 - (t * fadeTime));
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            GetComponent<SpriteRenderer>().color = color;
+            fadingOut = true;
+            t = fadeTime;
             GetComponent<SpriteRenderer>().sortingOrder = 7;
         }
     }
@@ -32,7 +54,8 @@ public class TransparencyCollide : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            GetComponent<SpriteRenderer>().color = Color.white;
+            fadingOut = false;
+            t = fadeTime;
             GetComponent<SpriteRenderer>().sortingOrder = 5;
         }
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7510056322845619010}
   - component: {fileID: 1651629881834055395}
   - component: {fileID: 7044839880486361389}
+  - component: {fileID: -6844159671766279038}
   m_Layer: 0
   m_Name: Bush 2
   m_TagString: Untagged
@@ -53,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -173,3 +174,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   color: {r: 1, g: 1, b: 1, a: 0.3529412}
+--- !u!114 &-6844159671766279038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653505595758680758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 0
+  m_CastsShadows: 0
+  m_SelfShadows: 1
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.15986155, y: -0.0860919, z: -0.0000003259372}
+  - {x: -0.13176611, y: -0.10633478, z: -0.000003377695}
+  - {x: -0.08206156, y: -0.12025213, z: -0.000003377695}
+  - {x: 0.029939098, y: -0.117601104, z: -0.000003377695}
+  - {x: 0.072353385, y: -0.09573126, z: -0.000003377695}
+  - {x: 0.080306076, y: -0.073861405, z: -0.000003377695}
+  - {x: 0.13332427, y: -0.0731986, z: -0.000003377695}
+  - {x: 0.1748726, y: -0.04761705, z: -0.0000003259372}
+  - {x: 0.1582495, y: 0.017596725, z: -0.0000003259372}
+  - {x: 0.09111769, y: 0.07449885, z: -0.0000003259372}
+  - {x: 0.028758258, y: 0.06513605, z: -0.0000003259372}
+  - {x: 0.0023845853, y: 0.09579039, z: -0.0000003259372}
+  - {x: -0.037524205, y: 0.12502451, z: -0.0000003259372}
+  - {x: -0.10835951, y: 0.10390883, z: -0.0000003259372}
+  - {x: -0.13940218, y: 0.085176565, z: -0.0000003259372}
+  - {x: -0.17520387, y: 0.072140984, z: -0.0000003259372}
+  - {x: -0.17086676, y: 0.003014854, z: -0.000003377695}
+  - {x: -0.16225146, y: -0.02349424, z: -0.000003377695}
+  - {x: -0.14965953, y: -0.040062234, z: -0.000003377695}
+  - {x: -0.16092604, y: -0.056630418, z: -0.000003377695}
+  - {x: -0.15032233, y: -0.06988496, z: -0.000003377695}
+  m_ShapePathHash: -1812050091
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -95348

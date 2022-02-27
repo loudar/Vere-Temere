@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -8703308530292267711}
   - component: {fileID: -6028831083853243353}
   - component: {fileID: -6017777656219664521}
+  - component: {fileID: 8615978538859238506}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -53,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101,7 +102,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 1}
+    pivot: {x: 0.5, y: 0.79}
     oldSize: {x: 1, y: 1.2121212}
     newSize: {x: 0.8828125, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -131,7 +132,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 1}
+    pivot: {x: 0.5, y: 0.79}
     oldSize: {x: 1, y: 1.2121212}
     newSize: {x: 0.8828125, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -169,3 +170,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
   color: {r: 1, g: 1, b: 1, a: 0.3529412}
+--- !u!114 &8615978538859238506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653505595758680758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.3851963, y: -0.69460607, z: -0.0000003259372}
+  - {x: -0.011135843, y: -0.827349, z: -0.0000003259372}
+  - {x: 0.022534678, y: -0.82591015, z: 0.0000027258207}
+  - {x: 0.4030944, y: -0.6857315, z: -0.0000003259372}
+  - {x: 0.4041654, y: -0.55600685, z: 0.0000027258207}
+  - {x: 0.43806022, y: -0.5421979, z: 0.0000027258207}
+  - {x: 0.46065676, y: -0.51081365, z: 0.0000027258207}
+  - {x: 0.21837147, y: -0.0350307, z: 0.0000027258207}
+  - {x: 0.19441135, y: -0.008773661, z: -0.0000003259372}
+  - {x: 0.08734467, y: -0.053041603, z: -0.0000003259372}
+  - {x: 0.055430625, y: -0.030392982, z: -0.0000003259372}
+  - {x: 0.023516485, y: -0.04789424, z: -0.0000003259372}
+  - {x: 0.020147631, y: -0.07829042, z: -0.0000003259372}
+  - {x: -0.20914763, y: -0.17555061, z: -0.0000003259372}
+  - {x: -0.45571488, y: -0.48600918, z: -0.0000003259372}
+  - {x: -0.43245143, y: -0.50927263, z: -0.0000003259372}
+  - {x: -0.38786334, y: -0.494733, z: -0.0000003259372}
+  m_ShapePathHash: 1737478414
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -93706
