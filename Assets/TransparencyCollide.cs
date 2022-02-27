@@ -11,6 +11,7 @@ public class TransparencyCollide : MonoBehaviour
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        sprite.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
     }
 
     // Update is called once per frame
